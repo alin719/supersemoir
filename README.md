@@ -1,6 +1,7 @@
 Super Semoir Website
 ===========
 Cloned from and built off of gshubham's (https://github.com/gshubham/bases_website)
+<<<<<<< HEAD
 
 From gshubham's README.md:
 
@@ -37,3 +38,5 @@ straightforward if you just want to add content (i.e. just copy what already
 exists). After making any changes, refresh the page on ``localhost`` (You may
 have to clear the cache by using Cmd + Shift + R when you refresh) and make
 sure that the website looks ok.
+=======
+>>>>>>> origin/master
