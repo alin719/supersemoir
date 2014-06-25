@@ -1,0 +1,209 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #666666;
+}
+
+.fullscreen {
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  min-height: 580px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.slide-header {
+  height: 100px;
+  background-color: #990000;
+}
+
+.banner {
+  font-family: "Crimson Text", sans-serif;
+  display: inline-block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 3.5em;
+  line-height: 1.6em;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  color: #333333;
+  width: 100%;
+  text-align: center;
+}
+
+.line-banner {
+  opacity: 0.5;
+  width: 70vw;
+  border-color: #000000;
+}
+
+.slide-banner-motto {
+  font-size: 0.6em;
+  text-align: center;
+  font-style: italic;
+  color: #444444;
+  line-height: 1.2em;
+}
+
+.slide-title {
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.slide-description {
+  font-size: 30px;
+  text-align: center;
+}
+.slide-description-about {
+  font-size: 25px;
+  text-align: center;
+  color:#666666;
+  font-weight :300;
+  line-height: 1.8;
+  font-family : "Open Sans", sans-serif
+}
+
+.slide-description-announcement {
+  font-size: 20px;
+  text-align: center;
+  color:#B3B3B3;
+  font-weight :300;
+  line-height: 1.8;
+  font-family : "Open Sans", sans-serif
+}
+.slide-description-heading {
+  color: #666666;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #990000;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+hr.divider {
+  background: url('/images/divider.png') 0 0 no-repeat;
+  border: 0;
+  height: 10px;
+  width: 100%;
+  margin: 40px 0px 40px 0px;
+}
+
+.card {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.card-info {
+  min-height: 300px;
+}
+
+.card-info .card-title {
+  text-align: center;
+  font-weight: bold;
+  color: #990000;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.card-info .card-content {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+#home {
+  background-image: url('/images/basesCover.png');
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  padding-top: 100px;
+}
+
+#eChallenge {
+  background-image: url('/images/eChallenge.jpg');
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  padding-top: 180px;
+}
+
+/*Bootstrap overrides*/
+hr {
+  margin-top: 5px;
+}
+
+.footer {
+  height: 60px;
+  line-height: 35px;
+  background: #34495e;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.mainScreen {
+  width : 100%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.2;
+  background: rgba(0,0,0,0.6) !important;
+}
+
+.bg1 {
+  background: #F7F0F2;
+}
+
+.bg2 {
+  background: #fff;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.block {
+  width: 100%;
+  display: block;
+  margin-top: 100px;
+}
+
+.center {
+  overflow: hidden;
+  margin-left: auto ;
+  margin-right: auto ;
+}
