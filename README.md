@@ -36,7 +36,5 @@ All pages are found under the ``views`` directory. Note that this project uses
 converted to the HTML served by the website. Using Jade should be relatively
 straightforward if you just want to add content (i.e. just copy what already
 exists). After making any changes, refresh the page on ``localhost`` (You may
-have to clear the cache by using Cmd + Shift + R when you refresh) and make
-sure that the website looks ok.
-=======
->>>>>>> origin/master
+have to clear the cache by using Cmd + Shift + R when you refresh) and make sure that the website looks ok.
+
