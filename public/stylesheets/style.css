@@ -3,6 +3,7 @@ html, body {
   width: 100%;
   margin: 0;
   color: #666666;
+  /*padding-top: 10px;*/
 }
 
 .fullscreen {
@@ -11,13 +12,13 @@ html, body {
 }
 
 .slide {
-  min-height: 580px;
+  min-height: 400px;
   width: 100%;
   padding-bottom: 20px;
 }
 
 .slide-header {
-  height: 100px;
+  height: 60px;
   background-color: #990000;
 }
 
@@ -28,7 +29,7 @@ html, body {
   background: rgba(255, 255, 255, 0.8);
   font-size: 3.5em;
   line-height: 1.6em;
-  padding-top: 10px;
+  padding-top: 0px;//10px;
   padding-bottom: 25px;
   color: #333333;
   width: 100%;
@@ -51,12 +52,12 @@ html, body {
 
 .slide-title {
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .slide-description {
@@ -136,7 +137,7 @@ hr.divider {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
-  padding-top: 100px;
+  padding-top: 300px;/*Distance of title box from top*/
 }
 
 #eChallenge {
@@ -150,6 +151,7 @@ hr.divider {
 }
 
 /*Bootstrap overrides*/
+/*Size of title box*/
 hr {
   margin-top: 5px;
 }

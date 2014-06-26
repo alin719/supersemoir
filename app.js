@@ -58,6 +58,8 @@ app.get('/getInvolved/careerFairs', routes.careerFairs);
 app.get('/getInvolved', routes.index);
 app.get('/getInvolved/digest', routes.digest);
 app.get('/getInvolved/registration', routes.registration);
+//Team
+app.get('/team/team', routes.team);
 // Media
 app.get('/media', routes.index);
 app.get('/media/events', routes.events);

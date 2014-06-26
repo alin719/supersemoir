@@ -54,7 +54,10 @@ exports.alumni = function (req, res) {
 	res.render ('history/alumni');
 }
 exports.careerFairs = function (req, res) {
-	res.render ('getInvolved/careerFairs');
+	res.render ('history/team');
+}
+exports.team = function (req, res){
+	res.render('team/team');
 }
 exports.digest = function (req, res) {
 	res.render ('getInvolved/digest');
