@@ -1,16 +1,27 @@
 div.navbar.navbar-inverse.navbar-fixed-top
-    div.collapse.navbar-collapse
-      ul.nav
+   .navbar-header
+    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+       //a.navbar-brand(href='#') Kaziir
+    .collapse.navbar-collapse
+      //ul.nav
         li
           a.navbarLogo(href='#home')
             img(src='/images/SuperSemoirLogo.png')
       ul.nav
         li
-          a(href='#programs') Project Description
+          a.navbarLogo(href='#home')
+            img(src='/images/SuperSemoirLogo.png')
+        li
+          a(href='#projectDescription') Project Description
           ul
             li
-              a(href='#programs') Stanford d.Extreme Class
-              ul
+              a(href='#users') Our Users
+              //ul
                 li
                   a(href='/programs/productShowcase') First Prototype
                 li
@@ -18,14 +29,19 @@ div.navbar.navbar-inverse.navbar-fixed-top
                 li
                   a(href='/programs/productShowCase') Final Prototype Expo
             li
-              a(href='/programs/eBootCamp') Social E 
+              a(href='#solution') The Solution
+            li
+              a(href='#team') The Team
+            li
+              a(href='#partners') Partners
+
             
         li
           a(href='/team/team') Current Team
           
         li
           a(href='#getInvolved') Funders and Partners
-          ul
+          //ul
             li
               a(href='/getInvolved/careerFairs') Career Fairs
             li
@@ -33,8 +49,8 @@ div.navbar.navbar-inverse.navbar-fixed-top
             li
               a(href='#getInvolved') Registration
         li
-          a(href='#media') Updates
-          ul
+          a(href='#updates') Updates
+          //ul
             li
               a(href='/media/events') Events
             li

@@ -1,3 +1,11 @@
+//Process to add new pages:
+  1. Create the jade file
+  2. Add the links wherever necessary
+  3. Add it in routes
+  4. Add it in app.get()
+
+
+
 doctype 5
 html
 
@@ -8,62 +16,60 @@ html
   body
     include navBarMain.jade
 
-//  div#myCarousel.carousel.slide
+ // div.myCarousel.carousel.slide
     ol.carousel-indicators
         li.active(data-target='#myCarousel', data-slide-to='0')
         li(data-target='#myCarousel', data-slide-to='1')
         li(data-target='#myCarousel', data-slide-to='2')
-        .carousel-inner
-        .item.active
+       .carousel-inner
+          .item.active
             img(src='/images/senegalTeam.jpg')
-            .container
+             .container
                 .carousel-caption
                     h1 SuperDuperSuperDuperSemoir
                     p
                         | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    p
-                        a.btn.btn-large.btn-primary(href='#') Sign up today
-        .item
+          .item
             img(src='/images/senegalTeam.jpg')
-            .container
+             .container
                 .carousel-caption
                     h1 Another example headline.
                     p
                         | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                     p
                         a.btn.btn-large.btn-primary(href='#') Learn more
-        .item
-            img(src='/images/senegalTeam.jpg')
-            .container
+           .item
+             img(src='/images/senegalTeam.jpg')
+             .container
                 .carousel-caption
                     h1 One more for good measure.
                     p
                         | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                     p
                         a.btn.btn-large.btn-primary(href='#') Browse gallery
-    a.left.carousel-control(href='#myCarousel', data-slide='prev')
+     a.left.carousel-control(href='#myCarousel', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
-    a.right.carousel-control(href='#myCarousel', data-slide='next')
+     a.right.carousel-control(href='#myCarousel', data-slide='next')
         span.glyphicon.glyphicon-chevron-right
-    /.carousel
+    .carousel
 
 
 
-div.myCarousel.carousel.slide
+//div.myCarousel.carousel.slide
       ol.carousel-indicators
         li.active(data-target='#myCarousel', data-slide-to='0')
         li(data-target='#myCarousel', data-slide-to='1')
         li(data-target='#myCarousel', data-slide-to='2')
         li(data-target='#myCarousel', data-slide-to='3')
       .carousel-inner
-        .item.active
+        .item
           img(src='/images/senegalTeam.jpg', alt="First Slide")
           .container
             .carousel-caption
               h1 SuperSemoirs
               p
                 |We killin' the game.
-        .item
+        .item.active
           img(src='/images/SScover.png', alt="Second Slide")
           .container
             .carousel-caption
@@ -90,91 +96,62 @@ div.myCarousel.carousel.slide
                 | Companies are blind to the students' identities. Students are blind to the identities of the companies.
               p
                 a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
-      a.left.carousel-control(href='#myCarousel', data-slide='2')
+      a.left.carousel-control(href='#myCarousel', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
-      a.right.carousel-control(href='#myCarousel', data-slide='1')
+      a.right.carousel-control(href='#myCarousel', data-slide='next')
         span.glyphicon.glyphicon-chevron-right
-      div.carousel
-
-
+      .carousel
 
 div#home.slide.fullscreen
       div.banner SuperSemoir
         hr.line-banner
         div.slide-banner-motto d.Extreme Farmers yay
-      .block
-        .row
-          .col-md-6
-            <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "https://docs.google.com/a/stanford.edu/forms/d/146IUkgwa06AwZ295lKPjKIxV0q7Ix_U3fUK4ZGRBgl4/viewform"> Apply to join BASES</a>
-          .col-md-6
-            <a class = "btn btn-block btn-danger mainScreen" role = "button" href = "http://www.eventbrite.com/e/bases-challenge-finale-tickets-11529351601">Get Your Free Ticket to BASES Finale on Tuesday May 20th!</a>
-    div#about.slide.bg1
+    div#projectDescription.slide.bg1
       div.slide-header
         div.slide-title - The Project -
       div.arrow-down
       div.slide-content
         div.container
           div.slide-description-about We are developing a product to enable farmers in West Africa to use fertilizer in their fields.  Microdose fertilization has been shown to increase crop yields by between 50% and 200% compared to the current paradigm of no fertilizer use. However, almost no farmers can afford to fertilize - broadcasting is too expensive and wasteful, and microdosing is too labor-intensive. <br> <strong> We are changing that<strong/>.
-    div#programs.slide.bg2
+    div#users.slide.bg2
       div.slide-header
-        div.slide-title - Programs -
+        div.slide-title - Our Users -
       div.arrow-down
       div.slide-content
         div.container
-          div.slide-description
-            div.slide-description-heading 10+
-            | programs, including a startup challenge, an entrepreneurship bootcamp, and a program for freshmen at Stanford University.
-          hr.divider
           div.row
-            div.col-md-4
-              div.card#test
+            div.col-sm-4
+              div.card
                 div.card-info
-                  div.card-title BASES Challenge
-                  div.card-content The BASES Challenge is Stanford’s premiere entrepreneurial event that looks to create, inspire and fund innovative Stanford startups through business plan competitions – E-Challenge and Social E-Challenge – and product demos – Product Showcase.
-                div.card-nav
+                  div.card-image
+                    img(src='/images/scaledBubufal.png')
+                //div.card-nav
                   <a class = "btn btn-block btn-danger" role = "button" href = "/programs/socialEChallenge"> Social E-Challenge </a>
                   <a class = "btn btn-block btn-danger" role = "button" href = "/programs/eChallenge"> E-Challenge </a>
                   <a class = "btn btn-block btn-danger" role = "button" href = "/programs/productShowCase"> Product Showcase</a>
-            div.col-md-4
+            div.col-sm-4
               div.card
                 div.card-info
-                  div.card-title E-Bootcamp
-                  div.card-content The premiere international conference for student entrepreneurs with up-and-coming startups to learn and network through panels, workshops, expos and a final pitch competition.
-                div.card-nav
+                  div.card-image
+                    img(src='/images/scaledCowFarmer.png')
+                //div.card-content The premiere international conference for student entrepreneurs with up-and-coming startups to learn and network through panels, workshops, expos and a final pitch competition.
+                //div.card-nav
                   <a class = "btn btn-block btn-danger" role = "button" href = "/programs/eBootCamp"> E-Bootcamp </a>
-            div.col-md-4
+            div.col-sm-4
               div.card
                 div.card-info
-                  div.card-title ETL
-                  div.card-content Stanford University's ETL is a weekly speaker series, co-hosted by BASES and the Stanford Technology Ventures Program, that brings innovation leaders from business, finance, technology, education and philanthropy to share their insights with aspiring entrepreneurs from all over the world.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "/programs/etl"> ETL </a>
-          div.row
-            div.col-md-4
-              div.card
-                div.card-info
-                  div.card-title Hackspace
-                  div.card-content An open hackspace for students and the Silicon Valley community to meet, work, host events and build next generations products and startups.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "/programs/hackspace"> Hackspace </a>
-            div.col-md-4
-              div.card
-                div.card-info
-                  div.card-title Professional Development
-                  div.card-content BASES offers events and programs to connect student entrepreneurs and provide them the skills to get started.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "/programs/profDev"> Professional Development </a>
-            div.col-md-4
-              div.card
-                div.card-info
-                  div.card-title Freshman Battalion
-                  div.card-content A year-long immersion program that identifies the brightest and most entrepreneurial Stanford freshmen to participate in the BASES core through a pitching competition, startup tours and a spring startup internship.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "/programs/freshmanBat"> Freshman Battalion </a>
-
-    div#history.slide.bg1
+                   div.card-image
+                     img(src='/images/scaledUsers1.png')
+                //  <a class = "btn btn-block btn-danger" role = "button" href = "/programs/etl"> ETL </a>	
+            //hr.divider
+    div.slide-description-about Resiliant but fatigued farmers with expansive barren fields need a means to make fertilizer adoption feasiable in order to improve yields and free their families from the pervasive burden of hunger.
+      //div.slide-content
+        div.container
+          div.slide-description-about Resiliant but fatigued farmers with expansive barren fields need a means to make fertilizer adoption feasiable in order to improve yields and free their families from the pervasive burden of hunger.        
+          
+    div#solution.slide.bg1
       div.slide-header
-        div.slide-title - History -
+        div.slide-title - The Solution -
       div.arrow-down
       div.slide-content
         div.container
@@ -182,7 +159,7 @@ div#home.slide.fullscreen
             div.col-md-6
               div.card
                 div.card-info
-                  div.card-title Alumni
+                  div.card-title Microdose Fertilization
                   div.card-content BASES was founded in 1996 by a group of five Stanford students with the aim of bringing together the worlds of engineering, innovation and business together. Over the years, BASES has grown from a platform to celebrate and reward student entrepreneurs with fantastic business ideas to the multi-faceted organization it is today that seeks to educate, inspire and fund the entrepreneurs of tomorrow.
                 div.card-nav
                   <a class = "btn btn-block btn-danger" role = "button" href = "/history/alumni"> Alumni </a>
@@ -194,9 +171,9 @@ div#home.slide.fullscreen
                 div.card-nav
                   <a class = "btn btn-block btn-danger" role = "button" href = "/history/pastWinners"> Past Winners </a>
 
-    div#getInvolved.slide.bg2
+    div#team.slide.bg2
       div.slide-header
-        div.slide-title - Get Involved -
+        div.slide-title - The Team -
       div.arrow-down
       div.slide-content
         div.container
@@ -229,35 +206,6 @@ div#home.slide.fullscreen
                 div.card-nav
                   <a class = "btn btn-block btn-danger" role = "button" href = "https://docs.google.com/a/stanford.edu/forms/d/146IUkgwa06AwZ295lKPjKIxV0q7Ix_U3fUK4ZGRBgl4/viewform"> Registration </a>
 
-    div#media.slide.bg1
-      div.slide-header
-        div.slide-title - Media -
-      div.arrow-down
-      div.slide-content
-        div.container
-          div.row
-            div.col-md-4
-              div.card
-                div.card-info
-                  div.card-title Events
-                  div.card-content In this section please find photos and videos from our programs.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "media/events"> Events </a>
-            div.col-md-4
-              div.card
-                div.card-info
-                  div.card-title In the News
-                  div.card-content BASES programs, alumni and past winners have been grabbing headlines in for years, and have been featured by TechCrunch, VentureBeat and NBC News. For media inquiries, please contact us.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "media/inTheNews"> In the News </a>
-            div.col-md-4
-              div.card
-                div.card-info
-                  div.card-title Branding Guidelines
-                  div.card-content Need a BASES logo? Please help yourself – as long as you comply with our visual guidelines. If you need a different format or size, please contact us.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "media/brandingGuidelines"> Branding Guidelines </a>
-
     div#partners.slide.bg2
       div.slide-header
         div.slide-title - Partners -
@@ -279,6 +227,21 @@ div#home.slide.fullscreen
                   div.card-content The BASES Board of Advisors is a group of industry innovators, thought leaders and BASES alumni, advising leadership on methods and best practices to best to uphold the BASES mission.
                 div.card-nav
                   <a class = "btn btn-block btn-danger" role = "button" href = "/partners/boardOfAdvisors"> Board of Advisors </a>
+        div.container
+          div.row
+           div.col-lg-6
+            div.card
+              div.card-info
+                div.card-image
+                  a(href="http://prl.stanford.edu")
+                    img(src='/images/PRL_LOGO_Big.png')
+           div.col-lg-6
+            div.card
+              div.card-info
+                div.card-image
+                  a(href = "http://prl.stanford.edu")
+                   img(src='/images/dave_and_craig.jpg')
+                div.card-content Special thanks to Craig Milroy, Dave Beach, and the PRL Team!
 
 
     include footerFiles.jade

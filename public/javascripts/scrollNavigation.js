@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 function scrollTo(destination) {
   $("html, body").animate({
-    scrollTop: $(destination).offset().top + $(".navbar").height() - $(".slide-header").height()
+    scrollTop: $(destination).offset().top - $(".navbar").height() /*- $(".slide-header").height()*/ /*- $(".arrow-down").height() - $(".slide.title").height()*/
     }, "slow");
 }
 
