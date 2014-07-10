@@ -1,0 +1,72 @@
+doctype 5
+html
+
+  head
+    title BASES
+    include ../headerFilesOthers.jade
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css')
+    link(rel='stylesheet', href='css/bootstrap-image-gallery.min.css')
+
+  body
+    include ../navBarOthers.jade
+
+    div#cover
+      div#heroTeam
+      div#heroText Team
+    div#content 
+      h1 Team
+      hr.accent
+      div.text 
+        p Our team is made up of four complete badasses from Stanford University!
+        p If you're a BASES alumni and would like to stay in the loop, please email Stephany Yong at <a href = "#"> syong@stanford.edu </a> with your Stanford graduation year, BASES team and position, and how you would like to be involved with the organization. 
+        p
+        p <strong> Matt Pauker </strong> and <strong> Rishi Kacker </strong> were on the winning team of the BASES 2002 E Challenge with their Identicrypt software security (now <a href = "http://www.voltage.com/company/">Voltage Security</a>), and they are now listed among the <a href = "http://www.youmotivation.com/inspirational-articles/30-successful-young-entrepreneurs-infographic-7377"> "Top 30 Richest Young Entrepreneurs Around the World".</a>
+        p
+        p As the CEO of Crowdbooster, <strong> Ricky Yean </strong> wants everyone to understand how to get more out of social media. Ricky first began experimenting with Twitter in 2008 and quickly became fascinated by the potential for new relationships between us and the people and organizations that we love. Crowdbooster is funded by Y Combinator and prominent angel investors, and serves clients like Lil Wayne, JetBlue, LA Times, and Ben & Jerry’s. Before Crowdbooster, Ricky graduated with a BA in Science, Technology and Society from Stanford, where he served as BASES co-president.
+   
+
+     //The Bootstrap Image Gallery lightbox, should be a child element of the document body 
+    div#blueimp-gallery.blueimp-gallery
+      //The container for the modal slides 
+      div.slides
+      //
+         Controls for the borderless lightbox 
+      h3.title
+      a.prev ‹
+      a.next ›
+      a.close ×
+      a.play-pause
+      ol.indicator
+      //The modal dialog, which will be used to wrap the lightbox content 
+      .modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button', aria-hidden='true') ×
+              h4.modal-title
+            .modal-body.next
+            .modal-footer
+              button.btn.btn-default.pull-left.prev(type='button')
+                i.glyphicon.glyphicon-chevron-left
+                | Previous
+              button.btn.btn-primary.next(type='button')
+                | Next
+                i.glyphicon.glyphicon-chevron-right
+  
+
+   div#links
+      a(href='/../images/SSCover.jpg', title='Banana', data-gallery='data-gallery')
+        img(src='/../images/SSCover.jpg.jpg', alt='Banana')
+      a(href='images/SSCover.jpg', title='Apple', data-gallery='data-gallery')
+        img(src='images/thumbnails/apple.jpg', alt='Apple')
+      a(href='images/SSCover.jpg', title='Orange', data-gallery='data-gallery')
+        img(src='images/thumbnails/orange.jpg', alt='Orange')
+
+
+
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(src='http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js')
+    script(src='js/bootstrap-image-gallery.min.js')
+
+include ../footerFilesOthers.jade   

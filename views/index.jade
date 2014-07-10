@@ -112,7 +112,7 @@ div#home.slide.fullscreen
       div.arrow-down
       div.slide-content
         div.container
-          div.slide-description-about We are developing a product to enable farmers in West Africa to use fertilizer in their fields.  Microdose fertilization has been shown to increase crop yields by between 50% and 200% compared to the current paradigm of no fertilizer use. However, almost no farmers can afford to fertilize - broadcasting is too expensive and wasteful, and microdosing is too labor-intensive. <br> <strong> We are changing that<strong/>.
+          div.slide-description-about We are developing a product to enable farmers in West Africa to use fertilizer in their fields.  Microdose fertilization has been shown to increase crop yields by between 50% and 200% compared to the current paradigm of no fertilizer use. However, almost no farmers can afford to fertilize - broadcasting is too expensive and wasteful, and microdosing is too labor-intensive. <br><br> <strong> We are changing that<strong/>.
     div#users.slide.bg2
       div.slide-header
         div.slide-title - Our Users -
@@ -144,7 +144,8 @@ div#home.slide.fullscreen
                      img(src='/images/scaledUsers1.png')
                 //  <a class = "btn btn-block btn-danger" role = "button" href = "/programs/etl"> ETL </a>	
             //hr.divider
-    div.slide-description-about Resiliant but fatigued farmers with expansive barren fields need a means to make fertilizer adoption feasiable in order to improve yields and free their families from the pervasive burden of hunger.
+    div.container
+      div.slide-description-about Resiliant but fatigued farmers with expansive barren fields need a means to make fertilizer adoption feasiable in order to improve yields and free their families from the pervasive burden of hunger.
       //div.slide-content
         div.container
           div.slide-description-about Resiliant but fatigued farmers with expansive barren fields need a means to make fertilizer adoption feasiable in order to improve yields and free their families from the pervasive burden of hunger.        
@@ -178,33 +179,43 @@ div#home.slide.fullscreen
       div.slide-content
         div.container
           div.row
-            div.col-md-4
+            div.col-sm-1
+            div.col-sm-2
               div.card
                 div.card-info
-                  div.card-title Career Fair
-                  div.card-content BASES connects the most innovative companies in the Valley with top engineering, business and marketing talent at Stanford University. Our external relations team is currently in the process of planning the Winter 2014 BASES Career Fair.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "/getInvolved/careerFairs"> Career Fair </a>
-            div.col-md-4
+                  div.card-image
+                    img(src='/images/kelly_profile.png')
+                    div.card-title Kelly LaBAMF
+                    div.card-content <strong>B.S. Mechanical Engineering 2014<strong/>
+            div.col-sm-2
               div.card
                 div.card-info
-                  div.card-title Digest
-                  div.card-content The BASES Digest is your weekly email digest summing up the best events happening in and around the Stanford entrepreneurship community. The Digest reaches thousands of subscribers across the Silicon Valley and around the world.
-                    | Sign up for the BASES mailing list
-                    | , or email us at
-                    | digest.bases@gmail.com.
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "https://docs.google.com/forms/d/1pK0STlCMcED6SJQO9RkunXrKF4Ui1_IHPXFCydXCcRc/viewform"> Subscribe to the Digest </a>
-            div.col-md-4
+                  div.card-image
+                    img(src='/images/matt_profile2.png')
+                    div.card-title Matt Hoang
+                    div.card-content <strong>B.S. Product Design 2014<strong/>            
+            div.col-sm-2
               div.card
                 div.card-info
-                  div.card-title Registration
-                  //
-                    div.card-content Thank you for your interest in BASES, the premier business and entrepreneurship student group of Silicon Valley. We typically open applications for membership in the late spring and early fall of each school year. Please email the presidents with any questions.
-                  .card-content Thank you for your interest in BASES, the premier business and entrepreneurship student group of Silicon Valley.  We are currently accepting applications for the BASES 2014-15 team. Please click the link below to apply. Note that the application is due by Friday May 16th at 11:59 PM.
+                  div.card-image
+                    img(src='/images/alex_profile.png')
+                    div.card-title Alex Lin
+                    div.card-content <strong>B.S. Mechanical Engineering 2014<strong/>            
+             div.col-sm-2
+              div.card
+                div.card-info
+                  div.card-image
+                    img(src='/images/joy_profile.png')
+                    div.card-title Joy Basu
+                    div.card-content <strong>J.D./MBA 2015<strong/>            
+             div.col-sm-2
+              div.card
+                div.card-info
+                  div.card-image
+                    img(src='/images/isabella_profile.png')
+                    div.card-title Isabella Akker
+                    div.card-content <strong>M.S. Earth Systems 2014<strong/>         
 
-                div.card-nav
-                  <a class = "btn btn-block btn-danger" role = "button" href = "https://docs.google.com/a/stanford.edu/forms/d/146IUkgwa06AwZ295lKPjKIxV0q7Ix_U3fUK4ZGRBgl4/viewform"> Registration </a>
 
     div#partners.slide.bg2
       div.slide-header
@@ -223,7 +234,8 @@ div#home.slide.fullscreen
             div.col-md-6
               div.card
                 div.card-info
-                  div.card-title Board of Advisors
+                  div.card-image
+                    img(src="/images/myAgro_logo.png")
                   div.card-content The BASES Board of Advisors is a group of industry innovators, thought leaders and BASES alumni, advising leadership on methods and best practices to best to uphold the BASES mission.
                 div.card-nav
                   <a class = "btn btn-block btn-danger" role = "button" href = "/partners/boardOfAdvisors"> Board of Advisors </a>
